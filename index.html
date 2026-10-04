@@ -1,0 +1,3062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Aurelius MUN 2026</title>
+
+  <meta
+    name="description"
+    content="Aurelius MUN 2026 — 11–12 November 2026, Jesus and Mary Convent School, Greater Noida."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+
+    /* =========================================================
+       RESET
+    ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0b0b0a;
+      color: #eee9df;
+      font-family: "DM Sans", sans-serif;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+
+    /* =========================================================
+       VARIABLES
+    ========================================================= */
+
+    :root {
+      --black: #0b0b0a;
+      --black-2: #11110f;
+      --black-3: #161613;
+
+      --gold: #c8a96b;
+      --gold-light: #dfc48b;
+      --gold-dark: #927546;
+
+      --cream: #eee9df;
+      --muted: #a6a29a;
+      --border: rgba(200, 169, 107, 0.22);
+
+      --serif: "Cormorant Garamond", serif;
+      --sans: "DM Sans", sans-serif;
+    }
+
+
+    /* =========================================================
+       GLOBAL
+    ========================================================= */
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 120px 0;
+      position: relative;
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+
+    .section-title {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: clamp(46px, 6vw, 82px);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: var(--border);
+    }
+
+
+    /* =========================================================
+       NAVBAR
+    ========================================================= */
+
+    nav {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      background: rgba(11, 11, 10, 0.88);
+      backdrop-filter: blur(18px);
+
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .nav-inner {
+      height: 76px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 22px;
+      letter-spacing: 0.18em;
+      color: var(--cream);
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 27px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: #aaa69e;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .register-nav {
+      padding: 12px 19px;
+      border: 1px solid var(--gold);
+      color: var(--gold) !important;
+    }
+
+    .register-nav:hover {
+      background: var(--gold);
+      color: #111 !important;
+    }
+
+    .menu-button {
+      display: none;
+      border: none;
+      background: transparent;
+      color: var(--cream);
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      background:
+        radial-gradient(
+          circle at 50% 45%,
+          rgba(200,169,107,0.12),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #0a0a09,
+          #11110e
+        );
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          90deg,
+          transparent 49.8%,
+          rgba(200,169,107,0.08) 50%,
+          transparent 50.2%
+        );
+
+      opacity: .6;
+    }
+
+    .hero-grid {
+      position: absolute;
+      inset: 0;
+
+      background-image:
+        linear-gradient(
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        ),
+        linear-gradient(
+          90deg,
+          rgba(255,255,255,0.025) 1px,
+          transparent 1px
+        );
+
+      background-size: 80px 80px;
+
+      mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+      );
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding-top: 100px;
+    }
+
+    .hero-small {
+      font-size: 12px;
+      letter-spacing: .35em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 25px;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(75px, 14vw, 190px);
+      line-height: .78;
+      letter-spacing: -.055em;
+      font-weight: 500;
+      margin-left: -7px;
+    }
+
+    .hero-title span {
+      display: block;
+    }
+
+    .hero-title .gold {
+      margin-left: 9vw;
+    }
+
+    .hero-description {
+      max-width: 520px;
+      margin: 50px 0 45px 9vw;
+
+      color: #aaa69e;
+      line-height: 1.8;
+      font-size: 14px;
+    }
+
+    .hero-buttons {
+      margin-left: 9vw;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 15px 25px;
+
+      border: 1px solid var(--gold);
+
+      color: var(--gold);
+
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+
+      transition: .3s;
+    }
+
+    .button:hover {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .button.primary {
+      background: var(--gold);
+      color: #111;
+    }
+
+    .button.primary:hover {
+      background: var(--gold-light);
+    }
+
+
+    /* =========================================================
+       COUNTDOWN
+    ========================================================= */
+
+    .countdown {
+      position: absolute;
+      bottom: 45px;
+      right: 40px;
+
+      display: flex;
+      gap: 22px;
+
+      z-index: 3;
+    }
+
+    .count-item {
+      min-width: 65px;
+      text-align: center;
+    }
+
+    .count-number {
+      display: block;
+
+      font-family: var(--serif);
+      font-size: 42px;
+      color: var(--cream);
+    }
+
+    .count-label {
+      display: block;
+
+      margin-top: 4px;
+
+      font-size: 8px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       INTRO
+    ========================================================= */
+
+    .intro {
+      background: #11110f;
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 80px;
+    }
+
+    .intro-text {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.08;
+      color: var(--cream);
+    }
+
+    .intro-description {
+      color: var(--muted);
+      max-width: 650px;
+      font-size: 15px;
+      line-height: 1.9;
+      margin-top: 35px;
+    }
+
+
+    /* =========================================================
+       CONFERENCE
+    ========================================================= */
+
+    .conference {
+      background: var(--black);
+    }
+
+    .conference-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      margin-bottom: 90px;
+    }
+
+    .date-large {
+      font-family: var(--serif);
+      font-size: clamp(65px, 9vw, 120px);
+      line-height: .8;
+      color: var(--cream);
+    }
+
+    .date-large small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 11px;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 20px;
+    }
+
+    .venue {
+      max-width: 360px;
+      align-self: end;
+    }
+
+    .venue-label {
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      margin-bottom: 13px;
+    }
+
+    .venue p {
+      color: #bbb7ae;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .stat {
+      background: var(--black);
+      padding: 35px;
+    }
+
+    .stat-number {
+      font-family: var(--serif);
+      font-size: 60px;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      color: var(--muted);
+    }
+
+
+    /* =========================================================
+       COMMITTEES
+    ========================================================= */
+
+    .committees {
+      background: #11110f;
+    }
+
+    .committee-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 70px;
+    }
+
+    .committee-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+
+      background: var(--border);
+    }
+
+    .committee-card {
+      background: #11110f;
+      padding: 42px 32px;
+      min-height: 430px;
+
+      display: flex;
+      flex-direction: column;
+
+      transition: .4s;
+    }
+
+    .committee-card:hover {
+      background: #171713;
+      transform: translateY(-5px);
+    }
+
+    .committee-number {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: .15em;
+      margin-bottom: 70px;
+    }
+
+    .committee-code {
+      font-family: var(--serif);
+      font-size: 50px;
+      color: var(--cream);
+      margin-bottom: 8px;
+    }
+
+    .committee-name {
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .committee-description {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 13px;
+      margin-bottom: auto;
+    }
+
+    .agenda-box {
+      margin-top: 35px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+    }
+
+    .agenda-label {
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+
+    .agenda {
+      color: #d4d0c7;
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+
+    /* =========================================================
+       AGENDAS
+    ========================================================= */
+
+    .agendas {
+      background: var(--black);
+    }
+
+    .agenda-list {
+      margin-top: 70px;
+    }
+
+    .agenda-row {
+      display: grid;
+      grid-template-columns: 100px 120px 1fr;
+      align-items: center;
+
+      padding: 28px 0;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .agenda-row:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .agenda-index {
+      color: var(--gold);
+      font-size: 12px;
+    }
+
+    .agenda-committee {
+      font-family: var(--serif);
+      font-size: 28px;
+    }
+
+    .agenda-row-text {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+
+    /* =========================================================
+       DRESS CODE
+    ========================================================= */
+
+    .dress {
+      background: #11110f;
+    }
+
+    .dress-grid {
+      margin-top: 70px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .dress-card {
+      min-height: 420px;
+
+      padding: 35px;
+
+      position: relative;
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(200,169,107,.08),
+          rgba(0,0,0,.25)
+        );
+    }
+
+    .dress-card::before {
+      content: "";
+
+      position: absolute;
+      inset: 0;
+
+      background:
+        radial-gradient(
+          circle at 70% 30%,
+          rgba(200,169,107,.16),
+          transparent 40%
+        );
+    }
+
+    .dress-content {
+      position: absolute;
+      left: 35px;
+      bottom: 35px;
+      z-index: 2;
+    }
+
+    .dress-number {
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .dress-day {
+      font-family: var(--serif);
+      font-size: 46px;
+      margin-top: 10px;
+    }
+
+    .dress-type {
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+
+    /* =========================================================
+       REGISTRATION
+    ========================================================= */
+
+    .registration {
+      background: var(--black);
+    }
+
+    .registration-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      margin-bottom: 65px;
+    }
+
+    .registration-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+    }
+
+    .price-card {
+      background: #11110f;
+      padding: 50px 40px;
+      border: 1px solid transparent;
+      transition: .3s;
+    }
+
+    .price-card:hover {
+      border-color: var(--border);
+    }
+
+    .price-title {
+      color: var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+    }
+
+    .price {
+      font-family: var(--serif);
+      font-size: 76px;
+      margin: 25px 0 10px;
+    }
+
+    .price-note {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+
+    /* =========================================================
+       SECRETARIAT
+    ========================================================= */
+
+    .secretariat {
+      background: #11110f;
+    }
+
+    .message-box {
+      margin-top: 65px;
+
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 70px;
+    }
+
+    .message-title {
+      font-family: var(--serif);
+      font-size: 56px;
+      line-height: .95;
+    }
+
+    .message-title span {
+      color: var(--gold);
+    }
+
+    .message {
+      color: #aaa69e;
+      font-family: var(--serif);
+      font-size: 22px;
+      line-height: 1.55;
+    }
+
+    .signature {
+      margin-top: 35px;
+      color: var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .15em;
+    }
+
+    .secretariat-people {
+      margin-top: 90px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--border);
+    }
+
+    .person {
+      background: #11110f;
+      padding: 30px;
+    }
+
+    .person-initials {
+      width: 60px;
+      height: 60px;
+
+      border: 1px solid var(--border);
+
+      display: grid;
+      place-items: center;
+
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--gold);
+
+      margin-bottom: 25px;
+    }
+
+    .person-name {
+      font-family: var(--serif);
+      font-size: 27px;
+    }
+
+
+    /* =========================================================
+       EXECUTIVE BOARD
+    ========================================================= */
+
+    .executive {
+      background: var(--black);
+    }
+
+    .board-grid {
+      margin-top: 65px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+
+      background: var(--border);
+    }
+
+    .board-card {
+      background: var(--black);
+      padding: 40px;
+    }
+
+    .board-code {
+      color: var(--gold);
+      font-size: 10px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .board-name {
+      font-family: var(--serif);
+      font-size: 36px;
+      margin-top: 35px;
+    }
+
+    .board-status {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
+       SCHEDULE
+    ========================================================= */
+
+    .schedule {
+      background: #11110f;
+    }
+
+    .schedule-grid {
+      margin-top: 65px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+    }
+
+    .schedule-day-title {
+      font-family: var(--serif);
+      font-size: 35px;
+      margin-bottom: 25px;
+    }
+
+    .schedule-item {
+      border-top: 1px solid var(--border);
+      padding: 20px 0;
+
+      display: flex;
+      justify-content: space-between;
+
+      color: #bbb7ae;
+      font-size: 13px;
+    }
+
+    .schedule-number {
+      color: var(--gold);
+    }
+
+
+    /* =========================================================
+       AWARDS
+    ========================================================= */
+
+    .awards {
+      background: var(--black);
+    }
+
+    .awards-list {
+      margin-top: 65px;
+    }
+
+    .award-row {
+      display: grid;
+      grid-template-columns: 80px 1.3fr 1fr;
+
+      align-items: center;
+
+      padding: 27px 0;
+
+      border-top: 1px solid var(--border);
+    }
+
+    .award-row:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .award-number {
+      color: var(--gold);
+      font-size: 11px;
+    }
+
+    .award-name {
+      font-family: var(--serif);
+      font-size: 28px;
+    }
+
+    .award-prize {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+
+    .faq {
+      background: #11110f;
+    }
+
+    .faq-list {
+      max-width: 900px;
+      margin: 65px auto 0;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .faq-question {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: 25px 0;
+
+      background: transparent;
+      border: none;
+
+      color: var(--cream);
+
+      text-align: left;
+      font-family: var(--serif);
+      font-size: 24px;
+
+      cursor: pointer;
+    }
+
+    .faq-plus {
+      color: var(--gold);
+      font-family: var(--sans);
+      font-size: 22px;
+
+      transition: transform .3s;
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+
+      color: var(--muted);
+
+      font-size: 13px;
+      line-height: 1.8;
+
+      transition: max-height .4s ease;
+    }
+
+    .faq-answer-inner {
+      padding: 0 50px 25px 0;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+
+    .faq-item.active .faq-plus {
+      transform: rotate(45deg);
+    }
+
+
+    /* =========================================================
+       CONTACT
+    ========================================================= */
+
+    .contact {
+      background: var(--black);
+    }
+
+    .contact-grid {
+      margin-top: 65px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      border-top: 1px solid var(--border);
+      border-left: 1px solid var(--border);
+    }
+
+    .contact-item {
+      padding: 35px;
+
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-label {
+      color: var(--gold);
+      font-size: 9px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .contact-value {
+      color: #d6d1c8;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================= */
+
+    footer {
+      background: #080807;
+      padding: 70px 0 35px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+
+      padding-bottom: 60px;
+
+      border-bottom: 1px solid var(--border);
+    }
+
+    .footer-logo {
+      font-family: var(--serif);
+      font-size: 48px;
+      color: var(--cream);
+    }
+
+    .footer-description {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 50px;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding-top: 25px;
+
+      color: #66635d;
+      font-size: 10px;
+    }
+
+    .top-link {
+      color: var(--gold);
+    }
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================= */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+
+      transition:
+        opacity .8s ease,
+        transform .8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 900px) {
+
+      .container {
+        width: min(100% - 32px, 700px);
+      }
+
+      .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 76px;
+        left: 0;
+
+        width: 100%;
+
+        background: #0b0b0a;
+
+        padding: 25px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .menu-button {
+        display: block;
+      }
+
+      .hero {
+        min-height: 900px;
+      }
+
+      .hero-title {
+        font-size: clamp(65px, 19vw, 120px);
+      }
+
+      .hero-title .gold {
+        margin-left: 0;
+      }
+
+      .hero-description,
+      .hero-buttons {
+        margin-left: 0;
+      }
+
+      .countdown {
+        position: relative;
+        bottom: auto;
+        right: auto;
+
+        margin-top: 80px;
+
+        justify-content: center;
+      }
+
+      .intro-grid,
+      .message-box,
+      .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .committee-grid,
+      .board-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .committee-card {
+        min-height: 370px;
+      }
+
+      .dress-grid,
+      .registration-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .secretariat-people {
+        grid-template-columns: 1fr;
+      }
+
+      .conference-top {
+        flex-direction: column;
+      }
+
+      .agenda-row {
+        grid-template-columns: 60px 80px 1fr;
+        gap: 10px;
+      }
+
+      .award-row {
+        grid-template-columns: 50px 1fr;
+        gap: 10px;
+      }
+
+      .award-prize {
+        grid-column: 2;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top,
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    }
+
+
+    @media (max-width: 550px) {
+
+      .section {
+        padding: 85px 0;
+      }
+
+      .hero-content {
+        padding-top: 130px;
+      }
+
+      .hero-title {
+        font-size: 70px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+        margin-top: 40px;
+      }
+
+      .countdown {
+        gap: 8px;
+      }
+
+      .count-item {
+        min-width: 60px;
+      }
+
+      .count-number {
+        font-size: 31px;
+      }
+
+      .count-label {
+        font-size: 7px;
+      }
+
+      .stat {
+        padding: 25px;
+      }
+
+      .stat-number {
+        font-size: 45px;
+      }
+
+      .agenda-row {
+        grid-template-columns: 45px 60px 1fr;
+      }
+
+      .agenda-committee {
+        font-size: 20px;
+      }
+
+      .agenda-row-text {
+        font-size: 11px;
+      }
+
+      .price {
+        font-size: 60px;
+      }
+
+      .message {
+        font-size: 18px;
+      }
+
+      .message-title {
+        font-size: 44px;
+      }
+
+      .faq-question {
+        font-size: 19px;
+      }
+
+      .footer-links {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+
+  <nav>
+    <div class="container nav-inner">
+
+      <a href="#home" class="logo">
+        AURELIUSMUN
+      </a>
+
+      <div class="nav-links" id="navLinks">
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#committees">Committees</a>
+        <a href="#conference">Conference</a>
+        <a href="#secretariat">Secretariat</a>
+        <a href="#awards">Awards</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+
+        <a
+          href="https://forms.gle/"
+          target="_blank"
+          class="register-nav"
+        >
+          Register
+        </a>
+
+      </div>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+
+    </div>
+  </nav>
+
+
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+
+  <section class="hero" id="home">
+
+    <div class="hero-grid"></div>
+
+    <div class="container hero-content">
+
+      <div class="hero-small">
+        Model United Nations
+      </div>
+
+      <h1 class="hero-title">
+
+        <span>Aurelius</span>
+
+        <span class="gold">
+          MUN
+        </span>
+
+        <span>2026</span>
+
+      </h1>
+
+      <p class="hero-description">
+        Two days of structured debate, diplomacy and considered
+        discussion. A new beginning for a remarkable tradition.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="https://forms.gle/"
+          target="_blank"
+          class="button primary"
+        >
+          Register Now
+        </a>
+
+        <a
+          href="#conference"
+          class="button"
+        >
+          Explore Conference
+        </a>
+
+      </div>
+
+      <div class="countdown">
+
+        <div class="count-item">
+          <span class="count-number" id="days">--</span>
+          <span class="count-label">Days</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="hours">--</span>
+          <span class="count-label">Hours</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="minutes">--</span>
+          <span class="count-label">Minutes</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="seconds">--</span>
+          <span class="count-label">Seconds</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       ABOUT
+  ========================================================== -->
+
+  <section class="section intro" id="about">
+
+    <div class="container">
+
+      <div class="intro-grid reveal">
+
+        <div>
+
+          <div class="section-label">
+            I · About Aurelius
+          </div>
+
+          <h2 class="section-title">
+            The<br>
+            beginning.
+          </h2>
+
+        </div>
+
+        <div>
+
+          <p class="intro-text">
+            Two days of structured debate,
+            diplomacy and considered discussion.
+          </p>
+
+          <p class="intro-description">
+            Aurelius MUN 2026 is a Model United Nations
+            conference hosted at Jesus and Mary Convent School,
+            Greater Noida, on 11 and 12 November 2026.
+            <br><br>
+            Across three committees, delegates will represent
+            nations and leaders, negotiate positions, and work
+            toward resolutions through the procedures of
+            formal debate.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       CONFERENCE
+  ========================================================== -->
+
+  <section class="section conference" id="conference">
+
+    <div class="container">
+
+      <div class="conference-top reveal">
+
+        <div>
+
+          <div class="section-label">
+            II · The Conference
+          </div>
+
+          <div class="date-large">
+            11 — 12
+            <small>November 2026</small>
+          </div>
+
+        </div>
+
+        <div class="venue">
+
+          <div class="venue-label">
+            Venue
+          </div>
+
+          <p>
+            Jesus and Mary Convent School<br>
+            'O' Block, Delta - III<br>
+            Greater Noida, Uttar Pradesh
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="stats reveal">
+
+        <div class="stat">
+
+          <div class="stat-number">
+            03
+          </div>
+
+          <div class="stat-label">
+            Committees
+          </div>
+
+        </div>
+
+        <div class="stat">
+
+          <div class="stat-number">
+            02
+          </div>
+
+          <div class="stat-label">
+            Days
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       COMMITTEES
+  ========================================================== -->
+
+  <section class="section committees" id="committees">
+
+    <div class="container">
+
+      <div class="committee-heading reveal">
+
+        <div>
+
+          <div class="section-label">
+            III · Committees
+          </div>
+
+          <h2 class="section-title">
+            Three<br>
+            chambers.
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="committee-grid">
+
+        <!-- UNGA -->
+
+        <article class="committee-card reveal">
+
+          <div class="committee-number">
+            01 · Committee
+          </div>
+
+          <h3 class="committee-code">
+            UNGA
+          </h3>
+
+          <div class="committee-name">
+            United Nations General Assembly
+          </div>
+
+          <p class="committee-description">
+            The principal deliberative body of the United
+            Nations, where every member state holds an equal
+            voice in debating questions of international concern.
+          </p>
+
+          <div class="agenda-box">
+
+            <div class="agenda-label">
+              Agenda
+            </div>
+
+            <p class="agenda">
+              Addressing the Global Refugee Crisis with Special
+              Emphasis on Equitable Responsibility-Sharing and
+              Refugee Integration
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- WHO -->
+
+        <article class="committee-card reveal">
+
+          <div class="committee-number">
+            02 · Committee
+          </div>
+
+          <h3 class="committee-code">
+            WHO
+          </h3>
+
+          <div class="committee-name">
+            World Health Organization
+          </div>
+
+          <p class="committee-description">
+            The UN's specialised agency for global public
+            health, coordinating international responses to
+            health challenges and shaping health policy.
+          </p>
+
+          <div class="agenda-box">
+
+            <div class="agenda-label">
+              Agenda
+            </div>
+
+            <p class="agenda">
+              Strengthening Global Health Security and Pandemic
+              Response with Special Emphasis on Vaccine Equity
+              and Early Outbreak Detection
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- AIPPM -->
+
+        <article class="committee-card reveal">
+
+          <div class="committee-number">
+            03 · Committee
+          </div>
+
+          <h3 class="committee-code">
+            AIPPM
+          </h3>
+
+          <div class="committee-name">
+            All India Political Parties Meet
+          </div>
+
+          <p class="committee-description">
+            A simulation of Indian national politics, where
+            delegates represent political leaders and debate
+            issues of national importance.
+          </p>
+
+          <div class="agenda-box">
+
+            <div class="agenda-label">
+              Agenda
+            </div>
+
+            <p class="agenda">
+              Deliberating on Contemporary Indian Political
+              Challenges with Special Emphasis on Electoral
+              Reforms and Political Funding
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       AGENDAS
+  ========================================================== -->
+
+  <section class="section agendas">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          III · II · Agendas
+        </div>
+
+        <h2 class="section-title">
+          The<br>
+          agendas.
+        </h2>
+
+      </div>
+
+
+      <div class="agenda-list">
+
+        <div class="agenda-row reveal">
+
+          <div class="agenda-index">
+            01
+          </div>
+
+          <div class="agenda-committee">
+            UNGA
+          </div>
+
+          <div class="agenda-row-text">
+            Addressing the Global Refugee Crisis with Special
+            Emphasis on Equitable Responsibility-Sharing and
+            Refugee Integration
+          </div>
+
+        </div>
+
+
+        <div class="agenda-row reveal">
+
+          <div class="agenda-index">
+            02
+          </div>
+
+          <div class="agenda-committee">
+            WHO
+          </div>
+
+          <div class="agenda-row-text">
+            Strengthening Global Health Security and Pandemic
+            Response with Special Emphasis on Vaccine Equity
+            and Early Outbreak Detection
+          </div>
+
+        </div>
+
+
+        <div class="agenda-row reveal">
+
+          <div class="agenda-index">
+            03
+          </div>
+
+          <div class="agenda-committee">
+            AIPPM
+          </div>
+
+          <div class="agenda-row-text">
+            Deliberating on Contemporary Indian Political
+            Challenges with Special Emphasis on Electoral
+            Reforms and Political Funding
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       DRESS CODE
+  ========================================================== -->
+
+  <section class="section dress">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          IV · Two Days · Dress Code
+        </div>
+
+        <h2 class="section-title">
+          The<br>
+          two days.
+        </h2>
+
+      </div>
+
+
+      <div class="dress-grid">
+
+        <div class="dress-card reveal">
+
+          <div class="dress-content">
+
+            <div class="dress-number">
+              01
+            </div>
+
+            <div class="dress-day">
+              Day 01 · 11 November
+            </div>
+
+            <div class="dress-type">
+              Traditional Indian
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="dress-card reveal">
+
+          <div class="dress-content">
+
+            <div class="dress-number">
+              02
+            </div>
+
+            <div class="dress-day">
+              Day 02 · 12 November
+            </div>
+
+            <div class="dress-type">
+              Formal Western
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       REGISTRATION
+  ========================================================== -->
+
+  <section class="section registration">
+
+    <div class="container">
+
+      <div class="registration-header reveal">
+
+        <div>
+
+          <div class="section-label">
+            V · Registration
+          </div>
+
+          <h2 class="section-title">
+            Join<br>
+            Aurelius.
+          </h2>
+
+        </div>
+
+      </div>
+
+
+      <div class="registration-grid">
+
+        <div class="price-card reveal">
+
+          <div class="price-title">
+            Internal Delegates
+          </div>
+
+          <div class="price">
+            ₹1,500
+          </div>
+
+          <p class="price-note">
+            Early Bird Fee · Valid until 17 October 2026.
+            <br>
+            For delegates from Jesus and Mary Convent School.
+          </p>
+
+          <a
+            href="https://forms.gle/"
+            target="_blank"
+            class="button"
+          >
+            Register Now →
+          </a>
+
+        </div>
+
+
+        <div class="price-card reveal">
+
+          <div class="price-title">
+            External Delegates
+          </div>
+
+          <div class="price">
+            ₹2,000
+          </div>
+
+          <p class="price-note">
+            Early Bird Fee · Valid until 17 October 2026.
+            <br>
+            For delegates from other schools and institutions.
+          </p>
+
+          <a
+            href="https://forms.gle/"
+            target="_blank"
+            class="button"
+          >
+            Register Now →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       SECRETARIAT
+  ========================================================== -->
+
+  <section class="section secretariat" id="secretariat">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          VI · First Edition
+        </div>
+
+        <h2 class="section-title">
+          Message from<br>
+          the Secretariat.
+        </h2>
+
+      </div>
+
+
+      <div class="message-box reveal">
+
+        <div class="message-title">
+          A new<br>
+          <span>beginning.</span>
+        </div>
+
+        <div>
+
+          <p class="message">
+
+            “Every great legacy begins with a single, daring
+            spark, turning ordinary moments into gold.
+
+            As we step into the inaugural edition of Aurelius
+            MUN, we aren’t just launching a conference—we are
+            breathing life into a shared vision and setting the
+            cornerstone for a remarkable tradition.
+
+            This very first edition means everything to us. It
+            represents the courage to start from scratch, the
+            boldness to dream without limits, and the unwavering
+            belief that young minds hold the power to shape a
+            better tomorrow.
+
+            The name Aurelius—derived from the Latin word
+            meaning golden or gilded—carries a profound legacy
+            of wisdom, resilience, and quiet strength.
+
+            Just like the name implies, we believe that true
+            brilliance isn't just about eloquence; it is forged
+            through thoughtful debate, empathy, and the pursuit
+            of truth under pressure.
+
+            To every single delegate, advisor, and team member
+            joining us on this journey: you are not just
+            attending an event. You are writing page one of our
+            golden story.
+
+            Let’s embrace the challenge, inspire one another,
+            and make our debut truly legendary!”
+
+          </p>
+
+          <div class="signature">
+            SJ · Savio Jose
+          </div>
+
+          <div class="signature">
+            AK · Aditya Kumar Singh
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="secretariat-people">
+
+        <div class="person reveal">
+
+          <div class="person-initials">
+            SJ
+          </div>
+
+          <div class="person-name">
+            Savio Jose
+          </div>
+
+          <div class="muted">
+            Secretariat
+          </div>
+
+        </div>
+
+
+        <div class="person reveal">
+
+          <div class="person-initials">
+            AK
+          </div>
+
+          <div class="person-name">
+            Aditya Kumar Singh
+          </div>
+
+          <div class="muted">
+            Secretariat
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       EXECUTIVE BOARD
+  ========================================================== -->
+
+  <section class="section executive">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          VII · Executive Board
+        </div>
+
+        <h2 class="section-title">
+          Executive<br>
+          Board.
+        </h2>
+
+      </div>
+
+
+      <div class="board-grid">
+
+        <div class="board-card reveal">
+
+          <div class="board-code">
+            UNGA
+          </div>
+
+          <div class="board-name">
+            To Be<br>
+            Announced
+          </div>
+
+          <div class="board-status">
+            Executive Board
+          </div>
+
+        </div>
+
+
+        <div class="board-card reveal">
+
+          <div class="board-code">
+            WHO
+          </div>
+
+          <div class="board-name">
+            To Be<br>
+            Announced
+          </div>
+
+          <div class="board-status">
+            Executive Board
+          </div>
+
+        </div>
+
+
+        <div class="board-card reveal">
+
+          <div class="board-code">
+            AIPPM
+          </div>
+
+          <div class="board-name">
+            To Be<br>
+            Announced
+          </div>
+
+          <div class="board-status">
+            Executive Board
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       SCHEDULE
+  ========================================================== -->
+
+  <section class="section schedule">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          VIII · Conference Schedule
+        </div>
+
+        <h2 class="section-title">
+          Schedule.
+        </h2>
+
+      </div>
+
+
+      <div class="schedule-grid">
+
+        <div class="reveal">
+
+          <div class="schedule-day-title">
+            Day 01 · 11 November
+          </div>
+
+          <div class="schedule-item">
+            <span>Opening Ceremony</span>
+            <span class="schedule-number">01</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Session 1</span>
+            <span class="schedule-number">02</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Lunch</span>
+            <span class="schedule-number">03</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Session 2</span>
+            <span class="schedule-number">04</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>High Tea</span>
+            <span class="schedule-number">05</span>
+          </div>
+
+        </div>
+
+
+        <div class="reveal">
+
+          <div class="schedule-day-title">
+            Day 02 · 12 November
+          </div>
+
+          <div class="schedule-item">
+            <span>Session 1</span>
+            <span class="schedule-number">01</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Lunch</span>
+            <span class="schedule-number">02</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Session 2</span>
+            <span class="schedule-number">03</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>Closing & Award Ceremony</span>
+            <span class="schedule-number">04</span>
+          </div>
+
+          <div class="schedule-item">
+            <span>High Tea</span>
+            <span class="schedule-number">05</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       AWARDS
+  ========================================================== -->
+
+  <section class="section awards" id="awards">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          Honours · Awards
+        </div>
+
+        <h2 class="section-title">
+          Recognising<br>
+          excellence.
+        </h2>
+
+      </div>
+
+
+      <div class="awards-list">
+
+        <div class="award-row reveal">
+
+          <div class="award-number">
+            01
+          </div>
+
+          <div class="award-name">
+            Best Delegate
+          </div>
+
+          <div class="award-prize">
+            1 per committee · Trophy + Medal + Certificate
+          </div>
+
+        </div>
+
+
+        <div class="award-row reveal">
+
+          <div class="award-number">
+            02
+          </div>
+
+          <div class="award-name">
+            High Commendation
+          </div>
+
+          <div class="award-prize">
+            1 per committee · Medal + Certificate
+          </div>
+
+        </div>
+
+
+        <div class="award-row reveal">
+
+          <div class="award-number">
+            03
+          </div>
+
+          <div class="award-name">
+            Special Mention
+          </div>
+
+          <div class="award-prize">
+            3 per committee · Certificate
+          </div>
+
+        </div>
+
+
+        <div class="award-row reveal">
+
+          <div class="award-number">
+            04
+          </div>
+
+          <div class="award-name">
+            Verbal Mention
+          </div>
+
+          <div class="award-prize">
+            Number varies according to committee size
+          </div>
+
+        </div>
+
+
+        <div class="award-row reveal">
+
+          <div class="award-number">
+            05
+          </div>
+
+          <div class="award-name">
+            Participation
+          </div>
+
+          <div class="award-prize">
+            All remaining delegates · Certificate
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       FAQ
+  ========================================================== -->
+
+  <section class="section faq" id="faq">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          IX · FAQ
+        </div>
+
+        <h2 class="section-title">
+          Questions.
+        </h2>
+
+      </div>
+
+
+      <div class="faq-list">
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+            <span>
+              What is Aurelius MUN?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+          </button>
+
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Aurelius MUN 2026 is a two-day Model United
+              Nations conference bringing delegates together
+              for structured debate, diplomacy and discussion.
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              When is Aurelius MUN?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              11–12 November 2026.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              Where is the conference being held?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              Jesus and Mary Convent School, Delta-3,
+              O Block, Greater Noida, Uttar Pradesh.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              What committees are available?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              United Nations General Assembly (UNGA),
+              World Health Organization (WHO), and
+              All India Political Parties Meet (AIPPM).
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              What is the dress code?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              Day 1: Traditional Indian.
+              Day 2: Formal Western.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              What are the agendas?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              UNGA: Addressing the Global Refugee Crisis with
+              Special Emphasis on Equitable Responsibility-
+              Sharing and Refugee Integration.
+              <br><br>
+              WHO: Strengthening Global Health Security and
+              Pandemic Response with Special Emphasis on
+              Vaccine Equity and Early Outbreak Detection.
+              <br><br>
+              AIPPM: Deliberating on Contemporary Indian
+              Political Challenges with Special Emphasis on
+              Electoral Reforms and Political Funding.
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item reveal">
+
+          <button class="faq-question">
+
+            <span>
+              When will the Executive Board be announced?
+            </span>
+
+            <span class="faq-plus">
+              +
+            </span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <div class="faq-answer-inner">
+              To be announced.
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       CONTACT
+  ========================================================== -->
+
+  <section class="section contact" id="contact">
+
+    <div class="container">
+
+      <div class="reveal">
+
+        <div class="section-label">
+          X · Contact
+        </div>
+
+        <h2 class="section-title">
+          Find us.
+        </h2>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Venue
+          </div>
+
+          <div class="contact-value">
+            Jesus and Mary Convent School<br>
+            'O' Block, Delta - III<br>
+            Greater Noida, Uttar Pradesh
+          </div>
+
+        </div>
+
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Official Email
+          </div>
+
+          <div class="contact-value">
+
+            <a href="mailto:aureliusjmcmun@gmail.com">
+              aureliusjmcmun@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Instagram
+          </div>
+
+          <div class="contact-value">
+
+            <a
+              href="https://instagram.com/aureliusjmcmun"
+              target="_blank"
+            >
+              @aureliusjmcmun
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Phone
+          </div>
+
+          <div class="contact-value">
+
+            <a href="tel:+919318469083">
+              +91 93184 69083
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Location
+          </div>
+
+          <div class="contact-value">
+
+            <a
+              href="https://maps.google.com/?q=Jesus+and+Mary+Convent+School+Greater+Noida"
+              target="_blank"
+            >
+              Open in Google Maps →
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item reveal">
+
+          <div class="contact-label">
+            Conference
+          </div>
+
+          <div class="contact-value">
+            Aurelius MUN 2026<br>
+            11–12 November 2026
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div>
+
+          <div class="footer-logo">
+            Aurelius MUN
+          </div>
+
+          <div class="footer-description">
+            11–12 November 2026 · Greater Noida
+          </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+
+          <a href="#committees">Committees</a>
+          <a href="#conference">Conference</a>
+
+          <a href="#secretariat">Secretariat</a>
+          <a href="#awards">Awards</a>
+
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+
+          <a
+            href="https://instagram.com/aureliusjmcmun"
+            target="_blank"
+          >
+            Instagram
+          </a>
+
+          <a href="mailto:aureliusjmcmun@gmail.com">
+            Email
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          © 2026 Aurelius MUN
+        </div>
+
+        <a href="#home" class="top-link">
+          Back to top ↑
+        </a>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    /* =========================================================
+       MOBILE MENU
+    ========================================================= */
+
+    const menuButton =
+      document.getElementById("menuButton");
+
+    const navLinks =
+      document.getElementById("navLinks");
+
+    menuButton.addEventListener("click", () => {
+
+      navLinks.classList.toggle("open");
+
+    });
+
+
+    document
+      .querySelectorAll(".nav-links a")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navLinks.classList.remove("open");
+
+        });
+
+      });
+
+
+
+    /* =========================================================
+       COUNTDOWN
+    ========================================================= */
+
+    const eventDate =
+      new Date("November 11, 2026 09:00:00").getTime();
+
+
+    function updateCountdown() {
+
+      const now =
+        new Date().getTime();
+
+      const distance =
+        eventDate - now;
+
+
+      if (distance <= 0) {
+
+        document.getElementById("days").textContent = "00";
+        document.getElementById("hours").textContent = "00";
+        document.getElementById("minutes").textContent = "00";
+        document.getElementById("seconds").textContent = "00";
+
+        return;
+
+      }
+
+
+      const days =
+        Math.floor(
+          distance / (1000 * 60 * 60 * 24)
+        );
+
+      const hours =
+        Math.floor(
+          (distance %
+            (1000 * 60 * 60 * 24))
+          /
+          (1000 * 60 * 60)
+        );
+
+      const minutes =
+        Math.floor(
+          (distance %
+            (1000 * 60 * 60))
+          /
+          (1000 * 60)
+        );
+
+      const seconds =
+        Math.floor(
+          (distance %
+            (1000 * 60))
+          /
+          1000
+        );
+
+
+      document.getElementById("days").textContent =
+        String(days).padStart(2, "0");
+
+      document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+      document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+
+      document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+
+    }
+
+
+    updateCountdown();
+
+    setInterval(updateCountdown, 1000);
+
+
+
+    /* =========================================================
+       FAQ
+    ========================================================= */
+
+    document
+      .querySelectorAll(".faq-question")
+      .forEach(question => {
+
+        question.addEventListener("click", () => {
+
+          const item =
+            question.parentElement;
+
+
+          document
+            .querySelectorAll(".faq-item")
+            .forEach(other => {
+
+              if (other !== item) {
+                other.classList.remove("active");
+              }
+
+            });
+
+
+          item.classList.toggle("active");
+
+        });
+
+      });
+
+
+
+    /* =========================================================
+       SCROLL REVEAL
+    ========================================================= */
+
+    const observer =
+      new IntersectionObserver(
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+              entry.target.classList.add("visible");
+
+              observer.unobserve(entry.target);
+
+            }
+
+          });
+
+        },
+        {
+          threshold: 0.12
+        }
+      );
+
+
+    document
+      .querySelectorAll(".reveal")
+      .forEach(element => {
+
+        observer.observe(element);
+
+      });
+
+
+
+    /* =========================================================
+       SMOOTH NAVIGATION
+    ========================================================= */
+
+    document
+      .querySelectorAll('a[href^="#"]')
+      .forEach(anchor => {
+
+        anchor.addEventListener("click", function(e) {
+
+          const target =
+            document.querySelector(
+              this.getAttribute("href")
+            );
+
+          if (!target) return;
+
+          e.preventDefault();
+
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+
+        });
+
+      });
+
+
+  </script>
+
+</body>
+</html>
